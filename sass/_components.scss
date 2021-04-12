@@ -32,9 +32,10 @@
       width: 100%;
       background-color: var(--color-grey-light-3);
     }
-    &::-webkit-input-placeholder {
-        font-weight: 100;
-        color: var(--color-grey-light-4);
+
+    &::placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-4);
     }
   }
 
@@ -57,7 +58,7 @@
   &__icon {
     height: 2rem;
     width: 2rem;
-    fill: var(--color-grey-dark-3)
+    fill: var(--color-grey-dark-3);
   }
 }
 
@@ -66,12 +67,34 @@
 
 .user-nav {
   background-color: greenyellow;
+
+  //changing height of this flex item to fill vertically
+  align-self: stretch;
+
+  display: flex;
+  align-items: center;
+
+  //selecting the direct children;
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  & > *:hover {
+    background-color: var(--color-grey-light-2);
+  }
+
   &__icon-box {
+    
   }
 
   &__icon {
     height: 2.25rem;
     width: 2.25rem;
+    fill: var(--color-grey-dark-2);
   }
 
   &__notification {
