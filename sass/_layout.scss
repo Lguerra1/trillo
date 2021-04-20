@@ -19,7 +19,7 @@
 }
 
 .content {
-    display: flex;
+  display: flex;
 }
 
 .sidebar {
@@ -36,9 +36,6 @@
 .hotel-view {
   background-color: #fff;
 
-  //TEST
-  height: 80rem;
-
   //setting flex grow to 1 so element grows as much as it can (all available space).
   flex: 1;
 }
@@ -51,12 +48,15 @@
 }
 
 .description {
-  background-color: orange;
+  font-size: 1.4rem;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
 }
 
 .user-reviews {
- background-color: yellowgreen;
- flex: 1;
+  background-color: yellowgreen;
+  flex: 1;
 }
